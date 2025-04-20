@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K9g-Dg-sjs">
+                                <rect key="frame" x="217" y="1009" width="382" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="jQo-4S-ME4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Lock Device"/>
+                                <connections>
+                                    <action selector="lockDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nvc-Hz-omi"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StagingComplete.png" translatesAutoresizingMaskIntoConstraints="NO" id="yBv-1I-Up4">
+                                <rect key="frame" x="290" y="109" width="240" height="226"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eVt-Ta-AL4">
+                                <rect key="frame" x="219" y="726" width="382" height="72"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="tm7-eq-ozK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Remove WiFi Profile">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="reloadR4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JjL-gH-2vY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oC-6f-rCf">
+                                <rect key="frame" x="219" y="852" width="382" height="79"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="CJG-zT-RaO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Check WiFi Status">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="checkR4Status:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nz5-9o-zyE"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" keyboardDismissMode="interactive" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" selectable="NO" id="8v0-Jf-M9i">
+                                <rect key="frame" x="226" y="433" width="396" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Welcome Walgreens Mobile Device Management’s S.I.D. Staging is done. This is the last step of the staging process. Once all previous steps are complete please select the lock button below to finish staging. </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K9g-Dg-sjs" secondAttribute="bottom" constant="76" id="3y5-9p-b0X"/>
+                            <constraint firstItem="K9g-Dg-sjs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="217" id="BLG-Mk-cI3"/>
+                            <constraint firstItem="eVt-Ta-AL4" firstAttribute="trailing" secondItem="0oC-6f-rCf" secondAttribute="trailing" id="D8y-lU-HHd"/>
+                            <constraint firstItem="eVt-Ta-AL4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="219" id="EBn-1k-A7R"/>
+                            <constraint firstItem="0oC-6f-rCf" firstAttribute="top" secondItem="eVt-Ta-AL4" secondAttribute="bottom" constant="54" id="Faj-XJ-2Jf"/>
+                            <constraint firstItem="eVt-Ta-AL4" firstAttribute="leading" secondItem="0oC-6f-rCf" secondAttribute="leading" id="Nxs-d1-ynP"/>
+                            <constraint firstItem="8v0-Jf-M9i" firstAttribute="top" secondItem="yBv-1I-Up4" secondAttribute="bottom" constant="98" id="Nzc-2j-PWf"/>
+                            <constraint firstItem="yBv-1I-Up4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QVR-Dr-tYS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K9g-Dg-sjs" secondAttribute="trailing" constant="221" id="UK1-9A-0ZE"/>
+                            <constraint firstItem="yBv-1I-Up4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="290" id="a0n-67-glY"/>
+                            <constraint firstItem="yBv-1I-Up4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="cbm-j1-7hy"/>
+                            <constraint firstItem="yBv-1I-Up4" firstAttribute="centerX" secondItem="eVt-Ta-AL4" secondAttribute="centerX" id="deD-NO-n3f"/>
+                            <constraint firstItem="K9g-Dg-sjs" firstAttribute="top" secondItem="0oC-6f-rCf" secondAttribute="bottom" constant="78" id="idg-GX-NCx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lockButton" destination="K9g-Dg-sjs" id="mnr-Lk-ZcA"/>
+                        <outlet property="r4WiFiButton" destination="eVt-Ta-AL4" id="foh-KU-YSh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543" y="-25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="StagingComplete.png" width="1024" height="1024"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

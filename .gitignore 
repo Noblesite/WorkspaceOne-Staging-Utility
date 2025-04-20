@@ -1,0 +1,33 @@
+# macOS metadata
+.DS_Store
+__MACOSX/
+
+# Xcode build artifacts
+build/
+DerivedData/
+*.xcworkspace
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+
+# Swift Package Manager
+.build/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/screenshots/
+fastlane/test_output/
+
+# User settings
+*.orig
+*.swp
+*.bak
+.idea/
+xcuserdata/
