@@ -66,7 +66,7 @@ This app is ideal for use in staging org groups where restrictions like Single A
 
 ## 📄 License
 
-Internal use only (or MIT if publicly shared)
+MIT
 
 ---
 
